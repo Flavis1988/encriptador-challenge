@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="/assets/logo.svg" alt="Logo Alura">
+    </header>
+     <main class="contenedor">
+        <section class="sector__encriptador">
+        <textarea id="texto" placeholder="Ingrese el texto aqui"></textarea> 
+                <p></p>
+        <div class="mensaje__botones">
+            <div>
+                    <img src="/assets/bi_exclamation-circle-fill.svg" alt="circulo de exclamacion">
+                    <span>Solo letras minúsculas y sin acentos</span>
+            </div>
+            <div class="botones">
+                <button id="botonEncriptar" class="boton" onclick="encriptarTexto();">Encriptar</button>
+                <button id="botonDesencriptar" class="boton" onclick="desencriptarTexto();">Desencriptar</button>
+         </div>
+        </div>
+        </section>
+        <section id="cajaDos" class="sector__encriptado">
+            <img id="imagen" src="/assets/imagen_encriptado.png">
+                <div id="contenedorResultado">
+                    <h2 id="mensaje_no_encontrado">Ningún mensaje fue encontrado</h2>
+                    <textarea id="textoEncriptado" placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+                </div>
+            <button class="boton" id="botonCopiar" onclick="copiarTexto();">Copiar</button>
+        </section>
+     </main>
+    <footer class="footer">
+        <p>&copy; <strong>Desarrollado por Flavia Mariel Gonzalez</strong> <small><b>2024</b></small></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
